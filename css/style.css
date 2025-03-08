@@ -9,3 +9,13 @@
 body{
     background: linear-gradient(to bottom, rgb(75, 102, 105), rgb(11, 40, 40));
 }
+
+.gradient{
+    background: linear-gradient(to bottom, rgb(154, 213, 219), rgb(65, 219, 219));
+}
+
+.gradient-text {
+    background: linear-gradient(to bottom, rgb(154, 213, 219), rgb(65, 219, 219));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
