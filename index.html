@@ -19,8 +19,9 @@
             <h1 class="text-3xl font-[400] tracking-wide text-white gradient-text">LEARN. INTERACT. SIMULATE. 
             </h3>
             <p class="max-w-[500px] my-2 text-md md:text-lg text-white/90">Take your learning to the next level—engage with 3D models of networking devices and build network simulations. Experience networking in a whole new dimension!</p>
-            <a href="https://drive.google.com/uc?export=download&id=1My7xIwD6unFAg1TyRaF6AlbGoM6UJwXJ" target="_blank" class="text-black text-lg w-full md:w-[180px] text-center py-3 px-4 rounded-sm mt-2 gradient">Download Here</a>
-            <div class="flex items-center justify-center md:justify-start">
+            <a href="#" id="download-btn" class="text-black text-lg w-full md:w-[180px] text-center py-3 px-4 rounded-sm mt-2 gradient">
+              Download Here
+          </a>            <div class="flex items-center justify-center md:justify-start">
                 <span class="text-white/90 mx-2 text-center my-2">OR Scan the QR code</span>
             </div>
             <div class="flex justify-center md:justify-start -ml-2">
@@ -33,5 +34,18 @@
         </div>
       </div>
     </div>
+    <script>
+      document.getElementById("download-btn").addEventListener("click", function (event) {
+        event.preventDefault();
+    
+        let link = document.createElement("a");
+        link.href = "assets/Logo.png"; 
+        link.setAttribute("download", "Logo.png");
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
+    </script>
   </body>
 </html>
